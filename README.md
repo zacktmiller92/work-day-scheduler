@@ -12,7 +12,7 @@ The updates to your event save when you click the save button.
 ## URL
 Live Application:
 
-https://zacktmiller92.github.io/work-day-scheduler/
+https://zacktmiller92.github.io/work-day-scheduler/index.html
 
 Repository: 
 
