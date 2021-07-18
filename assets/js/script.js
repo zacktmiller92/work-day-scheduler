@@ -1,8 +1,45 @@
 //variables 
-var calEnter = $("#cal-enter");
-// display today's date
+var cal = []
 
+//sets current date in jumbotron
 $("#currentDay").text(moment().format("dddd, MMM Do YYYY"))
+
+
+
+// edit calendar when it is clicked
+function editCalendar () {
+    var text = $(this)
+    .text()
+    .trim();
+
+    var textInput = $("<textarea>")
+    .addClass("form-control")
+    .val(text);
+
+    $(this).find("p").replaceWith(textInput);
+
+    textInput.trigger("focus");
+
+};
+
+
+function saveCalendar() {
+    // get the text from the form
+    var text = $(this)
+    .parent()
+    .find("textarea")
+    .val()
+    .trim();
+    console.log(text);
+
+    // replace the form with a p tag and fill it with the text from the form
+    $(this)
+    .parent()
+    .find("textarea")
+    .replaceWith("<p>" + text + "</p>")
+
+
+};
 
 
 // color code blocks based on date
@@ -23,6 +60,17 @@ function calBackgroundColor () {
     // console.log('calBackgroundColor has been called')
 };
 
+
+
+
+
+
 calBackgroundColor()
 setInterval(calBackgroundColor, (1000 * 60 * 5));
 
+function testFunction() {
+    alert('test')
+};
+
+$("li #cal-enter").on("click", editCalendar)
+$("li .saveBtn").on("click", saveCalendar)
