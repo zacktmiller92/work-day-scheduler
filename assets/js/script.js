@@ -23,7 +23,7 @@ function editCalendar () {
 };
 
 
-function saveCalendar() {
+function updateCalendar() {
     // get the text from the form
     var text = $(this)
     .parent()
@@ -73,4 +73,4 @@ function testFunction() {
 };
 
 $("li #cal-enter").on("click", editCalendar)
-$("li .saveBtn").on("click", saveCalendar)
+$("li .saveBtn").on("click", updateCalendar)
