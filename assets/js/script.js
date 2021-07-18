@@ -1,5 +1,5 @@
 //variables 
-var cal = []
+var calData = {}
 
 //sets current date in jumbotron
 $("#currentDay").text(moment().format("dddd, MMM Do YYYY"))
@@ -37,9 +37,21 @@ function updateCalendar() {
     .parent()
     .find("textarea")
     .replaceWith("<p>" + text + "</p>")
+};
 
+function loadStorage() {
+    calData = JSON.parse(localStorage.getItem("calData"));
+
+    if (!tasks) {
+        
+
+
+      }
 
 };
+
+
+
 
 
 // color code blocks based on date
