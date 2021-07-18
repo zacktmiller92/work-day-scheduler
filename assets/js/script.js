@@ -1,3 +1,10 @@
+//variables 
+var calEnter = $("#cal-enter");
 // display today's date
-var todaysDate = moment()
-$("#currentDay").text(todaysDate.format("dddd, MMM Do YYYY"))
+
+$("#currentDay").text(moment().format("dddd, MMM Do YYYY"))
+
+
+
+
+

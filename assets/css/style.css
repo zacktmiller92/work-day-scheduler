@@ -77,3 +77,9 @@ textarea{
 .fa-save {
   font-size: 2em;
 }
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
