@@ -1,2 +1,3 @@
 // display today's date
-$("#currentDay").text(moment().format("dddd, MMM Do YYYY"))
+var todaysDate = moment()
+$("#currentDay").text(todaysDate.format("dddd, MMM Do YYYY"))
