@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+    integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Work Day Scheduler</title>
 </head>
@@ -20,11 +22,129 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
-  </div>
+      <ul id="cal-list">
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>9AM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>10AM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>11AM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>12PM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>1PM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>2PM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>3PM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>4PM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-1 border border-left-0 border-secondary border-3" >
+              <p>5PM</p>
+            </div>
+            <div id="cal-enter" class="col-8 border border-white border-3">
+              <p></p>
+            </div>
+            <div class="col-1 saveBtn">
+              <span class="d-flex justify-content-center align-self-center fas fa-save"></span>
+            </div>
+        </li>
+      </ul>
+    </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
